@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeri Foto Saya</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+    .item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .item:hover img {
+      transform: scale(1.05);
+    }
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: #fff;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Galeri Foto Saya</h1>
+    <p>Tambahkan foto favoritmu di sini!</p>
+  </header>
+
+  <main>
+    <section class="gallery" id="gallery">
+      <!-- Contoh item, ganti dengan foto kamu -->
+      <!--
+      <figure class="item">
+        <img src="foto1.jpg" alt="Deskripsi foto" />
+        <figcaption class="caption">Deskripsi foto</figcaption>
+      </figure>
+      -->
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Galeri Foto Pribadi
+  </footer>
+</body>
+</html>
